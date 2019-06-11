@@ -1,0 +1,11 @@
+.quiz {
+  display: none;
+}
+
+a.button-hover {
+    cursor: pointer;
+}
+
+.result {
+  display: none;
+}
