@@ -8,158 +8,172 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="container">
+  <div class="container">
       <h1>Parks Quiz!</h1>
+
+      <div class="front">
         <p>Have you ever thought about going on a trip to a National Park in the United States, but couldn't choose which one to start with? Take this short quiz to find out which National Park should be your next vacation spot!</p>
-      <form class="calculator">
-        <div class="form-group">
+      <form id="calculator">
+
           <h2>To start lets get some information from you!</h2>
+
+        <!-- First Name -->
+        <div class="form-group">
           <label for="firstName">First Name:</label>
           <input class="firstName" class="form-control" type="text">
         </div>
+
         <!-- //Last Name -->
-        <div class="form-group">
+        <div class="form-group"
           <label for="lastName">Last Name:</label>
           <input class="lastName" class="form-control" type="text">
-          <p><button type="submit" class="btn"><strong>Start My Quiz!</strong></button></p>
+        </div>
+
+          <p><button type="submit" id="btn1"><strong>Start My Quiz!</strong></button></p>
+        </form>
+      </div>
+    </div>
+    <form class="quiz">
+      <div class="form-group">
+
+        <!-- //Question 1 -->
+      <form class="season">
+        <div class="form-group">
+          <h2>What is your Favorite Season?</h2>
+            <select class="form-control" id="season">
+              <option value="spring">Spring</option>
+              <option value="summer">Summer</option>
+              <option value="fall">Fall</option>
+              <option value="winter">Winter</option>
+            </select>
         </div>
       </form>
 
-    <form class="quiz">
-        <!-- //Question 1 -->
-      <div class="radio1">
-          <h2>What is your Favorite Season?</h2>
-            <label>
-              <input type="radio" name="operator" value="add" checked>
-                Spring
-            </label>
-          </div>
-        <div class="radio1">
-            <label>
-              <input type="radio" name="operator" value="add" checked>
-                Summer
-            </label>
-          </div>
-        <div class="radio1">
-            <label>
-              <input type="radio" name="operator" value="add" checked>
-                Fall
-            </label>
-          </div>
-        <div class="radio1">
-            <label>
-              <input type="radio" name="operator" value="add" checked>
-                Winter
-            </label>
-          </div>
-
           <!-- //Question 2 -->
-        <div class="radio2">
+      <form class="shirt">
+        <div class="form-group">
           <h2>What is your Favorite Shirt Pattern?</h2>
-            <label>
-              <input type="radio" name="operator" value="add" checked>
-                Paisley
-            </label>
+              <label>
+                <input type="radio" name="shirt" value="paisley" checked>
+                  Paisley
+              </label>
+
+            <div class="pattern">
+              <label>
+                <input type="radio" name="shirt" value="flamingo" checked>
+                  Flamingos
+              </label>
+              </div>
+            <div class="pattern">
+              <label>
+                <input type="radio" name="shirt" value="floral" checked>
+                  Floral
+              </label>
+              </div>
+            <div class="pattern">
+              <label>
+                <input type="radio" name="shirt" value="plaid" checked>
+                  Plaid
+              </label>
+              </div>
+            <div class="pattern">
+              <label>
+                <input type="radio" name="shirt" value="stripes" checked>
+                  Stripes
+              </label>
+              </div>
+            <div class="pattern">
+              <label>
+                <input type="radio" name="shirt" value="polka" checked>
+                  Polk-a-dots
+              </label>
             </div>
-          <div class="radio2">
-            <label>
-              <input type="radio" name="operator" value="add" checked>
-                Flamingos
-            </label>
+            <div class="pattern">
+              <label>
+                <input type="radio" name="shirt" value="cammo" checked>
+                  Cammo
+              </label>
             </div>
-          <div class="radio2">
-            <label>
-              <input type="radio" name="operator" value="add" checked>
-                Floral
-            </label>
-            </div>
-          <div class="radio2">
-            <label>
-              <input type="radio" name="operator" value="add" checked>
-                Plaid
-            </label>
-            </div>
-          <div class="radio2">
-            <label>
-              <input type="radio" name="operator" value="add" checked>
-                Stripes
-            </label>
-            </div>
-          <div class="radio2">
-            <label>
-              <input type="radio" name="operator" value="add" checked>
-                Polk-a-dots
-            </label>
           </div>
-          <div class="radio2">
-            <label>
-              <input type="radio" name="operator" value="add" checked>
-                Cammo
-            </label>
-          </div>
+        </form>
 
 
           <!-- //Question 3 -->
-        <div class="radio3">
+      <form class="place" >
+        <div class="form-group">
             <h2>What type of atmosphere do you enjoy being in?</h2>
+          <div class="energy">
             <label>
-              <input type="radio" name="operator" value="add" checked>
+              <input type="radio" name="place" value="public" checked>
                 Public places with a lot of engery
             </label>
           </div>
-        <div class="radio3">
+          <div class="energy">
             <label>
-              <input type="radio" name="operator" value="add" checked>
+              <input type="radio" name="place" value="semiPublic" checked>
                 Semi-public places with a medium amount of energy
             </label>
           </div>
-        <div class="radio3">
+          <div class="energy">
             <label>
-              <input type="radio" name="operator" value="add" checked>
+              <input type="radio" name="place" value="semiPrivate" checked>
                 Semi-private locations with low energy
             </label>
           </div>
-        <div class="radio3">
+          <div class="energy">
             <label>
-              <input type="radio" name="operator" value="add" checked>
+              <input type="radio" name="place" value="private" checked>
                 Private space without a soul in sight
             </label>
           </div>
+        </div>
+      </form>
 
           <!-- //Question 4 -->
-        <div class="radio4">
+      <form class="location">
+        <div class="landscape">
             <h2>What does your Ideal Landscape look like?</h2>
             <label>
-              <input type="radio" name="operator" value="add" checked>
+              <input type="radio" name="location" value="desert" checked>
                 Desert
             </label>
           </div>
-        <div class="radio4">
+        <div class="landscape">
             <label>
-              <input type="radio" name="operator" value="add" checked>
+              <input type="radio" name="location" value="mountains" checked>
                 Mountains
             </label>
           </div>
-        <div class="radio4">
+        <div class="landscape">
             <label>
-              <input type="radio" name="operator" value="add" checked>
+              <input type="radio" name="location" value="beaches" checked>
                 Beaches
             </label>
           </div>
-        <div class="radio4">
+        <div class="landscape">
             <label>
-              <input type="radio" name="operator" value="add" checked>
+              <input type="radio" name="location" value="marsh" checked>
                 Flamingo Marsh
             </label>
-            <p><button type="submit" class="btn"><strong>Find out My Next Vacation!</strong></button></p>
-          </div>
-        </form>
+        <div class="landscape">
+            <label>
+              <input type="radio" name="location" value="city" checked>
+                Cityscape
+            </label>
 
-        <form class="result">
+            <p><button type="submit" id="btn2"><strong>Find out My Next Vacation!</strong></button></p>
+          </div>
+        </div>
+      </form>
+  </form>
+
+  <div id="result">
+        <form class="result1">
           <div class="form-group">
-            <h3>Well done <span class</span> </h3>
+            <h3>Well done <span class="firstName"></span>! Based on your results, it looks like you enjoy those long summer days with plenty of time to do as much as possible as your favorite season and </h3>
           </div>
         </form>
+      </div>
     </div>
   </body>
 </html>
